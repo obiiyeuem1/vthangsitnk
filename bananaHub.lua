@@ -186,7 +186,7 @@ Window = Fluent:CreateWindow({
 local Tabs = {
 
 Info=Window:AddTab({ Title="Tab Info" }),
-    Main=Window:AddTab({ Title="Tab farminv" }),
+    Main=Window:AddTab({ Title="Tab farming" }),
 
 Main1=Window:AddTab({ Title="Tab quest other" }),
     Sea=Window:AddTab({ Title="Tab Sea Event" }),
@@ -4585,9 +4585,9 @@ spawn(function()
         while wait() do
             pcall(function()
                 if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
-                    StatusElite:SetDesc("Elite Boss: âœ…ï¸ | Killed:  "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
+                    StatusElite:SetDesc("Elite Boss: dispawn! | Killed:  "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 else
-                    StatusElite:SetDesc("Elite Boss: âŒï¸ | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
+                    StatusElite:SetDesc("Elite Boss: spawn! | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 end
             end)
         end
@@ -4701,7 +4701,7 @@ if Sea3 then
         end
         for _, v in pairs(game:GetService("Workspace").Map.MysticIsland:GetDescendants()) do
             if v:IsA("MeshPart") then
-                if v.MeshId=="rbxassetid://6745037796" then
+                if v.MeshId=="rbxassetid://5009915812" then
                     return v
                 end
             end
